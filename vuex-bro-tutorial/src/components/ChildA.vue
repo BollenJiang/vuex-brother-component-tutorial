@@ -15,11 +15,13 @@
     },
     computed: {
       BMessage() {
+        // 这里存储从store里获取的B组件的数据
         return this.$store.state.BMsg
       }
     },
     methods: {
       transform() {
+        // 触发receiveAMsg，将A组件的数据存放到store里去
         this.$store.commit('receiveAMsg', {
           AMsg: this.AMessage
         })
