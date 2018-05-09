@@ -2,7 +2,7 @@
   <div id="childB">
     <h1>我是B组件</h1>
     <button @click="transform">点我让A组件接收到数据</button>
-    <p>因为你点了A，所以我的数字发生了变化：{{AMessage}}</p>
+    <p>因为你点了A，所以我的信息发生了变化：{{AMessage}}</p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
   export default {
     data() {
       return {
-        BMessage: 'Hello，B组件，我是A组件'
+        BMessage: 'Hello，A组件，我是B组件'
       }
     },
     computed: {
